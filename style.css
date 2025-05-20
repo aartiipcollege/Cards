@@ -1,0 +1,210 @@
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, sans-serif;
+ }
+
+ body {
+   background-color: #f5f5f5;
+   margin: auto;
+ }
+
+ .cards-container {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: center;
+   padding: 20px;
+   background: #c1d1d3;
+ }
+
+ .card {
+   width: 360px;
+   background-color: white;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   overflow: hidden;
+ }
+
+ .image-container {
+   height: 200px;
+ }
+
+ .image-container img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+
+ .content {
+   padding: 15px;
+ }
+
+ .heading-box {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 15px;
+ }
+
+ .title {
+   font-size: 22px;
+   font-weight: bold;
+   color: #494646;
+ }
+
+ .details {
+   font-size: 14px;
+   color: #096a62;
+   font-weight: 700;
+   padding: 5px 15px;
+   background: linear-gradient(white, rgb(81, 226, 219));
+ }
+
+ .gender {
+   font-size: 14px;
+   color: #5c5a5a;
+   margin: 10px 0 5px;
+ }
+
+ .know {
+   font-size: 13px;
+   color: #028593;
+   margin-bottom: 15px;
+ }
+
+ .card-features {
+   font-size: 12px;
+   color: #787777;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 10px;
+ }
+
+ .pricing {
+   border: 1px solid #ddd;
+   padding: 10px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 15px;
+ }
+
+ .original-price {
+   text-decoration: line-through;
+   color: #888;
+   font-size: 15px;
+   margin-left: -140px;
+ }
+
+ .current-price {
+   font-size: 18px;
+   font-weight: bold;
+   color: #333;
+
+ }
+
+ .discount {
+   background-color: #ffc107;
+   color: #333;
+   font-weight: bold;
+   padding: 4px 8px;
+   border-radius: 3px;
+   font-size: 13px;
+ }
+
+ .button-container {
+   display: flex;
+   justify-content: center;
+ }
+
+ .book-now {
+   padding: 12px;
+   border-radius: 5px;
+   border: none;
+   background-color: #039db2;
+   color: white;
+   font-weight: bold;
+   cursor: pointer;
+   width: 100%;
+   font-size: 14px;
+   transition: background 0.3s ease;
+ }
+
+ .book-now:hover {
+   background-color: #028593;
+ }
+
+ /* Modal Styles */
+ .modal {
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100vh;
+   background: rgba(0, 0, 0, 0.5);
+   display: none;
+   align-items: center;
+   justify-content: center;
+   z-index: 999;
+   padding: 20px;
+ }
+
+ .modal-content {
+   background: white;
+   padding: 20px;
+   border-radius: 10px;
+   text-align: center;
+   max-width: 300px;
+   width: 100%;
+   animation: slideUp 0.4s ease;
+ }
+
+ .modal-content p {
+   margin-bottom: 15px;
+   font-weight: bold;
+   color: #333;
+ }
+
+ .close-btn {
+   background: #039db2;
+   color: white;
+   padding: 8px 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 14px;
+ }
+
+ .close-btn:hover {
+   background: #028593;
+ }
+
+ @keyframes slideUp {
+   from {
+     transform: translateY(50px);
+     opacity: 0;
+   }
+
+   to {
+     transform: translateY(0);
+     opacity: 1;
+   }
+ }
+
+ /* Bottom Sheet for Mobile */
+ @media (max-width: 600px) {
+  .original-price {
+   
+   margin-left: -100px;
+ }
+   .modal {
+     align-items: flex-end;
+   }
+
+   .modal-content {
+     border-radius: 15px 15px 0 0;
+     max-width: 100%;
+   }
+ }
