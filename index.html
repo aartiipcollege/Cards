@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Multiple Cards with Modal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="cards-container">
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="image-container">
+        <img src="bg.jpg" alt="Family" />
+      </div>
+      <div class="content">
+        <div class="heading-box">
+          <h2 class="title">Healthy India 2025</h2>
+          <p class="details">85 Tests</p>
+        </div>
+        <p class="gender">Blood Glucose Fasting, Vitamin B12, Vitamin D Total-25 Hydroxy, Liver Function Test</p>
+        <p class="know">+Know More</p>
+        <div class="card-features">
+          <span>🕒 12 hrs Fasting</span>
+          <span>✅ Everyone</span>
+          <span>⏱ 24 hrs</span>
+        </div>
+        <div class="pricing">
+          <span class="current-price">₹2249</span>
+          <span class="original-price">₹8525</span>
+          <span class="discount">74% off</span>
+        </div>
+        <div class="button-container">
+          <button class="book-now" onclick="openModal()">Book Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 (Duplicate with changes if needed) -->
+    <div class="card">
+      <div class="image-container">
+        <img src="bg.jpg" alt="Another Test" />
+      </div>
+      <div class="content">
+        <div class="heading-box">
+          <h2 class="title">Essential Full Body</h2>
+          <p class="details">70 Tests</p>
+        </div>
+        <p class="gender">Blood Glucose Fasting, Vitamin B12, Vitamin D Total-25 Hydroxy, Liver Function Test</p>
+        <p class="know">+Know More</p>
+        <div class="card-features">
+          <span>🕒 10 hrs Fasting</span>
+          <span>✅ Adults</span>
+          <span>⏱ 24 hrs</span>
+        </div>
+        <div class="pricing">
+          <span class="current-price">₹1999</span>
+          <span class="original-price">₹5999</span>
+          <span class="discount">67% off</span>
+        </div>
+        <div class="button-container">
+          <button class="book-now" onclick="openModal()">Book Now</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="card">
+      <div class="image-container">
+        <img src="bg.jpg" alt="Family" />
+      </div>
+      <div class="content">
+        <div class="heading-box">
+          <h2 class="title">Healthy India 2025</h2>
+          <p class="details">85 Tests</p>
+        </div>
+        <p class="gender">Blood Glucose Fasting, Vitamin B12, Vitamin D Total-25 Hydroxy, Liver Function Test</p>
+        <p class="know">+Know More</p>
+        <div class="card-features">
+          <span>🕒 12 hrs Fasting</span>
+          <span>✅ Everyone</span>
+          <span>⏱ 24 hrs</span>
+        </div>
+        <div class="pricing">
+          <span class="current-price">₹2249</span>
+          <span class="original-price">₹8525</span>
+          <span class="discount">74% off</span>
+        </div>
+        <div class="button-container">
+          <button class="book-now" onclick="openModal()">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shared Modal -->
+  <div class="modal" id="popup">
+    <div class="modal-content">
+      <p>Thank you! Your test has been added to the cart.</p>
+      <button class="close-btn" onclick="closeModal()">OK</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
